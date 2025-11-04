@@ -1,6 +1,6 @@
 app:
   message: "HELLO World"
-  title: "Weather Platform"
+  title: "Platform"
   version: "5.0.0"
   features:
     enableForecast: true
