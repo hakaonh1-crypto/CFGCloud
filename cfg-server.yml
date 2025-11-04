@@ -1,6 +1,6 @@
 app:
   message: "HELLO World"
-  title: "Platform ss"
+  title: "Swagger"
   version: "5.0.0"
   features:
     enableForecast: true
