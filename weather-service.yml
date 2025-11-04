@@ -5,4 +5,4 @@ app:
   features:
     enableForecast: true
     enableExtendedForecast: false
-    maxDays: 10000
+    maxDays: 77777777777
