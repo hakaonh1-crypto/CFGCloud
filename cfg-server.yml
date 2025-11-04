@@ -1,11 +1,11 @@
 app:
-  message: "SEARCH365"
+  message: "HELLO WORLD"
   title: "Swagger"
   version: "5.0.0"
   features:
     enableForecast: true
     enableExtendedForecast: false
-    maxDays: 9999
+    maxDays: 10001
     enableAlerts: true
   limits:
     maxRequestsPerMinute: 1000
@@ -20,7 +20,7 @@ service1:
   useAdvancedAlgorithm: true
 
 service2:
-  name: "AlertService"
+  name: "AlertService - AlertService - AlertService"
   notifyEmail: "alerts@weather.com"
   notifySMS: true
 
