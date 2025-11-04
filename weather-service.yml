@@ -1,7 +1,7 @@
 app:
   message: "Bye bye"
   title: "Weather Service API"
-  version: "1.0.0"
+  version: "5.0.0"
   features:
     enableForecast: true
     enableExtendedForecast: false
