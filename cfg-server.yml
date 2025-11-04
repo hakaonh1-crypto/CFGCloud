@@ -1,6 +1,6 @@
 app:
   message: "HELLO World"
-  title: "Platform"
+  title: "Platform s"
   version: "5.0.0"
   features:
     enableForecast: true
