@@ -1,2 +1,8 @@
 app:
   message: "Hello from Steeltoe Config Server!"
+  title: "Weather Service API"
+  version: "1.0.0"
+  features:
+    enableForecast: true
+    enableExtendedForecast: false
+    maxDays: 10
