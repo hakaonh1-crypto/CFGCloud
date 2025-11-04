@@ -1,11 +1,11 @@
 app:
-  message: "HELLO World"
+  message: "SEARCH365"
   title: "Swagger"
   version: "5.0.0"
   features:
     enableForecast: true
     enableExtendedForecast: false
-    maxDays: 77
+    maxDays: 9999
     enableAlerts: true
   limits:
     maxRequestsPerMinute: 1000
