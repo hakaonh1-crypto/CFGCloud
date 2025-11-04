@@ -1,5 +1,5 @@
 app:
-  message: "Hello"
+  message: "Hello You from Weather Service!"
   title: "Weather Service API"
   version: "1.0.0"
   features:
