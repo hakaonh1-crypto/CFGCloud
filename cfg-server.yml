@@ -1,5 +1,5 @@
 app:
-  message: "SEARCH365"
+  message: "HELLO World"
   title: "Weather Platform"
   version: "5.0.0"
   features:
