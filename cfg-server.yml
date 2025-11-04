@@ -1,0 +1,36 @@
+app:
+  message: "SEARCH365"
+  title: "Weather Platform"
+  version: "5.0.0"
+  features:
+    enableForecast: true
+    enableExtendedForecast: false
+    maxDays: 77
+    enableAlerts: true
+  limits:
+    maxRequestsPerMinute: 1000
+    maxConcurrentUsers: 500
+  endpoints:
+    externalApi: "https://api.weather.com/v3"
+    alertApi: "https://api.alerts.com/v1"
+
+service1:
+  name: "ForecastService"
+  pollingIntervalSeconds: 30
+  useAdvancedAlgorithm: true
+
+service2:
+  name: "AlertService"
+  notifyEmail: "alerts@weather.com"
+  notifySMS: true
+
+service3:
+  name: "StatisticsService"
+  storeHistoryDays: 365
+  useCache: true
+
+service4:
+  name: "DashboardService"
+  uiTheme: "dark"
+  enableRealtimeUpdates: true
+  refreshIntervalSeconds: 15

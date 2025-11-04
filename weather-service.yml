@@ -1,8 +1,0 @@
-app:
-  message: "SEARCH365"
-  title: "Weather Service API"
-  version: "5.0.0"
-  features:
-    enableForecast: true
-    enableExtendedForecast: false
-    maxDays: 77
