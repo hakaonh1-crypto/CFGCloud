@@ -15,7 +15,7 @@ app:
     alertApi: "https://api.alerts.com/v1"
 
 service1:
-  name: "ForecastService - ForecastService"
+  name: "ForecastService"
   pollingIntervalSeconds: 30
   useAdvancedAlgorithm: true
 
