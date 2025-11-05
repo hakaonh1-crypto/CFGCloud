@@ -1,4 +1,4 @@
 service1:
   name: "ForecastService - -  - - ForecastService"
   pollingIntervalSeconds: 30
-  useAdvancedAlgorithm: true
+  useAdvancedAlgorithm: false
