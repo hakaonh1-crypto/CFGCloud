@@ -13,24 +13,3 @@ app:
   endpoints:
     externalApi: "https://api.weather.com/v3"
     alertApi: "https://api.alerts.com/v1"
-
-service1:
-  name: "ForecastService"
-  pollingIntervalSeconds: 30
-  useAdvancedAlgorithm: true
-
-service2:
-  name: "AlertService"
-  notifyEmail: "alerts@weather.com"
-  notifySMS: true
-
-service3:
-  name: "StatisticsService"
-  storeHistoryDays: 365
-  useCache: true
-
-service4:
-  name: "DashboardService"
-  uiTheme: "dark"
-  enableRealtimeUpdates: true
-  refreshIntervalSeconds: 15
