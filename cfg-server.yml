@@ -1,15 +1,40 @@
 app:
-  message: "SEARCH365"
+  message: "HELLO WORLD"
   title: "Swagger"
   version: "5.0.0"
   features:
     enableForecast: true
     enableExtendedForecast: false
-    maxDays: 9999
+    maxDays: 10001
     enableAlerts: true
   limits:
     maxRequestsPerMinute: 1000
     maxConcurrentUsers: 500
   endpoints:
     externalApi: "https://api.weather.com/v3"
+<<<<<<< HEAD
     alertApi: "https://api.alerts.com/v1"
+=======
+    alertApi: "https://api.alerts.com/v1"
+
+service1:
+  name: "ForecastService"
+  pollingIntervalSeconds: 30
+  useAdvancedAlgorithm: true
+
+service2:
+  name: "AlertService - AlertService - AlertService"
+  notifyEmail: "alerts@weather.com"
+  notifySMS: true
+
+service3:
+  name: "StatisticsService"
+  storeHistoryDays: 365
+  useCache: true
+
+service4:
+  name: "DashboardService"
+  uiTheme: "dark"
+  enableRealtimeUpdates: true
+  refreshIntervalSeconds: 15
+>>>>>>> 69665e8f2825395ec4fb7e1cca38cd14fd0b6e98
