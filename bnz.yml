@@ -1,9 +1,9 @@
 app:
-  title: "Weather BNZ"
+  title: "Weather BNZ----------------------------MMM"
   message: "Hello BNZ client!"
   features:
     maxDays: 5
 
 service1:
-  name: "BNZ Service"
+  name: "BNZ Service-----------------MMMNN"
   useAdvancedAlgorithm: false
