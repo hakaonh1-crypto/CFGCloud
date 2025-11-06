@@ -1,0 +1,9 @@
+app:
+  title: "Default"
+  message: "default message"
+  features:
+    maxDays: 1
+
+service1:
+  name: "default"
+  useAdvancedAlgorithm: false

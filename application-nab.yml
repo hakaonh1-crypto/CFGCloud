@@ -1,6 +1,6 @@
 app:
   title: "Weather NAB"
-  message: "Hello NAB client!"
+  message: "Hello NAB client! Updated at 2025"
   features:
     maxDays: 7
 
