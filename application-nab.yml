@@ -1,0 +1,9 @@
+app:
+  title: "Weather NAB"
+  message: "Hello NAB client!"
+  features:
+    maxDays: 7
+
+service1:
+  name: "NAB Service"
+  useAdvancedAlgorithm: true

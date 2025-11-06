@@ -1,5 +1,0 @@
-service4:
-  name: "DashboardService"
-  uiTheme: "dark"
-  enableRealtimeUpdates: true
-  refreshIntervalSeconds: 15

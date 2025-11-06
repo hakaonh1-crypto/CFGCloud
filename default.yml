@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: nab 
+app:
+  title: "Global Weather API"
+  version: "1.0"
+  message: "Welcome default!"
+  features:
+    maxDays: 3

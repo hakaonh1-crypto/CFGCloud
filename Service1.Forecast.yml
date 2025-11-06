@@ -1,4 +1,0 @@
-service1:
-  name: "ForecastService - -  - - ForecastService"
-  pollingIntervalSeconds: 30
-  useAdvancedAlgorithm: false

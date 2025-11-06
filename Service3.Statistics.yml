@@ -1,4 +1,0 @@
-service3:
-  name: "StatisticsService"
-  storeHistoryDays: 365
-  useCache: true
