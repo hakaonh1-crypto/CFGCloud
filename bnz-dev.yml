@@ -1,9 +1,0 @@
-app:
-  title: "Weather BNZ- dev"
-  message: "Hello BNZ client!"
-  features:
-    maxDays: 10000
-
-service1:
-  name: "BNZ Service --- dev"
-  useAdvancedAlgorithm: false
