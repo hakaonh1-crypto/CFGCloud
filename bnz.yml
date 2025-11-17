@@ -1,5 +1,5 @@
 app:
-  title: "Weather BNZ---check"
+  title: "Weather"
   message: "Hello BNZ client!"
   features:
     maxDays: 5
