@@ -11,3 +11,5 @@ AdminSettings:
   ApplicationTitle: "ABCD123456789"
 DefaultCounts:
   SuggestedSearchCount: 50000
+AdminSettings:
+  DomainDisplay: "https://localhost:5011/"
