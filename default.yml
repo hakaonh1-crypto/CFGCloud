@@ -13,3 +13,386 @@ DefaultCounts:
   SuggestedSearchCount: 50000
 Swagger:
   Title: "1+139943"
+
+
+AuthenticationConfigurationSection:
+  TenantId: 0c4a6ced-85d3-4a8b-bae0-ce6124a99b8b
+  ClientId: fde0300f-f75d-4411-b0a9-8421f681f4e1
+
+AzureTableStorage:
+  ConnectionString: ""
+
+AzureKeyVault:
+  AzureTableStorageKey: s365-test-table-key
+  AzureSearchAPIKey: s365-test-azure-search-key
+
+SpellCorrectedSearch: false
+TableStoragePrefix: S365
+CertificateAuthentication: false
+
+Search:
+  DocSizeCalculation: false
+  CategorySpecificOrder: []
+  ResultLimit: 0
+  DefaultPageSize: 50
+  ShowingFullFacets: false
+  DefaultControlPanelsPageSize: 50
+  DefaultFastLinksPageSize: 50
+  DefaultNavigationPageSize: 50
+  DefaultContentEnhancementPageSize: 50
+  DefaultSearchSuggestionPageSize: 50
+  AllowSameSuggestion: true
+  SpellCheckEnabled: false
+  Provider: Azure
+  DefaultProfile: all
+  DefaultNavigationProfile: navigation
+  DefaultMobileNavigationProfile: Both
+  AuditProfile: audit
+  RecentRelatedSearchesProfile: recent-related
+  DefaultCollectionFieldName: collection
+  DefaultProfileFieldName: profile
+  DefaultUrlFieldName: url
+  DefaultBoostBlockItemCount: 50
+  DefaultAllSearchSuggestionProfile: allsuggestions
+  DefaultSearchSuggestionProfile: suggestions
+  DefaultSearchSuggestionFieldName: suggestion
+  DefaultSearchSuggestionCategoryFieldName: category
+  DefaultSearchSuggestionByIdProfile: suggestionsById
+  IsSpellCheckCachedInSearchSuggestionsIndex: true
+  
+  RecentSearches:
+    IsEnabled: true
+  
+  RelatedSearches:
+    IsEnabled: true
+  
+  AvailableProfiles:
+    IsEnabled: true
+  
+  SearchServiceResourcePool:
+    IsEnabled: false
+    SearchClientDefaultTimeout: 100000
+    SearchClientDefaultDeactivationTime: 1800000
+  
+  BoostBlock:
+    BoostQuery:
+      IsEnabled: false
+      DefaultBoostFactor: 3
+  
+  MultiFacetQuerySupport:
+    IsEnabled: true
+    MaxFacetCount: 1
+  
+  RequestHeaders:
+    Items:
+      - Name: UserId
+        Key: x-userid
+        IsRequired: false
+        SwaggerDefaultValue: ""
+        Description: Contains the logged-in user's unique identifier.
+      - Name: SecureSite
+        Key: x-secure-site
+        IsRequired: false
+        SwaggerDefaultValue: ""
+        Description: If this request header is present then the query should be modified to return both secure and public items from the search index.
+    HeaderKeysToRemoveFromAudit:
+      - Accept
+      - Accept-Encoding
+      - Authorization
+      - Connection
+      - Content-Type
+      - Host
+      - X-Original-Proto
+  
+  Audit:
+    EventTypeField: event
+    UserIdField: userid
+    ProfileField: profile
+    QueryField: query
+    SortField: timestamp
+    DefaultResultCount: 50
+    DefaultDistinctListResultCount: 50
+    DefaultRelatedSearchesResultCount: 1000
+    FuzzyMatchingSimilarity: 0.7
+  
+  SecureSite:
+    IsEnabled: false
+    SecureField: dacl
+    IsSecureCollectionField: true
+    SecureFieldPublicValue: public
+    SecureFieldSecureValue: secure
+  
+  TitleFileType:
+    IsEnabled: false
+    FileExtensionExclusions:
+      - html
+      - htm
+      - jsp
+      - php
+  
+  Synonyms:
+    IsEnabled: true
+    SynonymMaps: []
+  
+  Highlights:
+    DefaultPreTag: "<b>"
+    DefaultPostTag: "</b>"
+    MaxHighlightLength: 256
+    DefaultSeparator: " ... "
+  
+  ClientCertificate:
+    IsEnabled: false
+    SubjectName: ""
+    OrganisationName: ""
+    IssuerName: ""
+    Thumbprint: ""
+  
+  Security:
+    IsEnabled: false
+    Url: https://ds365api.search365.ai/Security/
+  
+  Facet:
+    DateRange:
+      AddMinimumDateRange: true
+      MinimumDateRangeLabel: All
+      Labels:
+        - Value: 1
+          Label: Today
+        - Value: 7
+          Label: This Week
+        - Value: 30
+          Label: Last 30 Days
+        - Value: 60
+          Label: Last 60 Days
+        - Value: 90
+          Label: Last 90 Days
+        - Value: 365
+          Label: This Year
+    DisplayNameMappings:
+      modified: Last Modified Date
+      published: Last Published Date
+      category: Source
+      extension: Result Type
+      EntityType: Type
+      ogtype: Content Type
+  
+  Teams:
+    GraphUrlPrefix: https://graph.microsoft.com/beta/$metadata#teams
+    ChannelIdRegExPattern: channels\\('(.*?)')\\)
+    TeamsUrlPrefix: https://teams.microsoft.com/_#/apps/
+    TeamsUrlFormat: "{0}a2da8768-95d5-419e-9441-3b539865b118/channels/{1}/sections/conversations?slug=General&messageId={2}&replyChainId={2}&q={3}&threadId={1}"
+  
+  Filter:
+    LogicalOperatorSplitRegex: "( and not )|( and )|( or )|( or not )"
+    ODataOperatorSplitRegex: "( eq )|( ne )|( gt )|( ge )|( lt )|( le )"
+  
+  FeaturedContent:
+    MockData:
+      IsEnabled: false
+      Data:
+        - Query: Credit Card
+          Type: html
+          Content: "<div class=\"search-feature\">\n\n    <h2><a href=\"https://www.somebank.com/personal/credit-cards\" target=\"_blank\">Credit Cards</a></h2>\n\n    <p>Compare and find the right card for you. Choose from low interest, reward points, low annual fees and balance transfers.</p>\n\n    <ul>\n        <li><a href=\"https://www.somebank.com/personal/credit-cards/calculators-and-tools/product-selector\" target=\"_blank\">Find the right card for you</a></li>\n        <li><a href=\"https://www.somebank.com/personal/credit-cards/calculators-and-tools/compare\" target=\"_blank\">Comparison table</a></li>\n<li><a href=\"https://www.somebank.com/personal/credit-cards/offers\" target=\"_blank\">Current offers</a></li\n          <li><a href=\"https://www.somebank.com/personal/credit-cards/balance-transfers\" target=\"_blank\">Balance Transfers</a></li>\n    </ul>\n</div>"
+          Position: top
+          Title: Credit Cards Information
+        - Query: Apply
+          Type: html
+          Content: "<div>verb (used with object), applied, applying. See <a href=\"https://www.dictionary.com/browse/apply\" target=\"_blank\">Apply</a></div>"
+          Position: top
+          Title: Test mock data
+
+DefaultCounts:
+  SuggestedSearchCount: 5
+  RecentSearchCount: 5
+  RecentlyViewedItemCount: 5
+  RelatedSearchCount: 5
+
+AzureSearchServices:
+  - AzureServiceName: wus-shared-azure-search
+    AzureSearchUrl: https://wus-shared-azure-search.search.windows.net
+    AzureSearchAPIVersion: 2023-10-01-Preview
+    AzureSearchAPIKey: ""
+    IndexName: wus-dev-reg1-test-nav
+
+TransformApi:
+  Url: https://localhost:44354
+
+AdminSettings:
+  SearchAdminApiUrl: /adminui
+  SearchApiUrl: /
+  ApplicationTitle: S365 WUS Dev Reg1 Search Administration
+  DomainDisplay: https://localhost:5001/
+  DomainS365Delete: https://wus-s365-test-ae-op.azurewebsites.net/main
+  DomainNavigation: https://wus-s365-test-ae-op.azurewebsites.net/navigation-search
+  DomainSuggestion: https://wus-s365-test-ae-op.azurewebsites.net/search-suggestion
+  DomainContentEnhancement: https://localhost:7217
+  DomainToken: https://wus-s365-test-ae-op.azurewebsites.net/web-ui
+
+AzureBingSpell:
+  Url: https://wus-s365-test-ae-spellcheck.azurewebsites.net/spellcheck/spellcheck
+  ApiKey: 3b2c05a3642a443fa0883c8b9a6f0378
+  ApiVersion: v7.0
+  Market: en-AU
+
+TelemetryClient:
+  InstrumentationKey: cfb976e8-8528-4523-be71-fab27a523d86
+
+Logging:
+  IncludeScopes: false
+  LogLevel:
+    Default: Debug
+    System: Information
+    Microsoft: Information
+
+AllowedHosts: "*"
+
+ApplicationInsights:
+  InstrumentationKey: cfb976e8-8528-4523-be71-fab27a523d86
+
+Swagger:
+  Title: S365 Search API
+  Version: 2.6.8.0
+  DefaultProfile: all
+  DefaultQuery: topology
+  DefaultSearchId: 285378ba-3454-41a0-b14a-4101dbf1cb79
+
+QueryRulesDatabaseCollectionName: QueryRules
+QueryRulesDatabaseCollectionSynonymName: Synonyms
+QueryRulesDatabaseCollectionFastLinkName: FastLinks
+QueryRulesDatabaseCollectionNavigationName: Navigations
+QueryRulesDatabaseCollectionCategoryName: Category
+QueryRulesDatabaseCollectionCategoryFastLinksName: CategoryFastLink
+QueryRulesDatabaseCollectionUserPermissionName: UserPermission
+QueryRulesDatabaseCollectionUserGroupsName: UserGroups
+
+DatabaseConnection:
+  CosmosDBEndpointAddress: ""
+  CosmosDBPrimaryKey: ""
+  CosmosDBDatabaseId: ""
+  CosmosDBMode: ""
+  CosmosDBCollection: ""
+
+Cache:
+  Items:
+    - Key: QueryRules
+      ExpirationSeconds: 300
+
+ShowAdminUISidebar:
+  FeaturedContent:
+    IsEnabled: true
+  BoostsAndBlocks:
+    IsEnabled: true
+  Synonym:
+    IsEnabled: true
+  FastLinks:
+    IsEnabled: true
+  Navigation:
+    IsEnabled: true
+  ControlPanel:
+    IsEnabled: true
+
+ShowAPIOnSwagger:
+  Configuration:
+    GetSettings: true
+    CreateDatabaseFirst: true
+  Token:
+    GetToken: true
+  QueryRules:
+    GetQueryRule: true
+    GetQueryRules: true
+    Put: true
+    UploadQueryRules: true
+    Delete: true
+  Search:
+    GetSearchResults: true
+    GetSearchSuggestions: true
+    GetHomePageSearchResults: true
+    GetHistorySearchResults: true
+    GetSearchProvider: true
+    LogClickEvent: true
+    GetHybridSearch: true
+    GetSearchCategorizedSuggestions: true
+  Synonym:
+    GetSynonyms: true
+    DeleteSynonym: true
+    Put: true
+    CreateSynonym: true
+    GetSynonymsCount: true
+  FastLinks:
+    GetFastLinks: true
+    GetFastLinksIndexName: true
+    GetListCategories: true
+    UpdateCategories: true
+    UpdateCategoriesFastLink: true
+    DeleteFastLink: true
+    Put: true
+    GetFastLinksCount: true
+    ChangeSequenceFastLink: true
+    DeleteCategoriesFastLink: true
+  Navigation:
+    GetNavigations: true
+    DeleteNavigation: true
+    Put: true
+    CreateNavigation: true
+    GetNavigationsCount: true
+    GetSearchSuggestionsNavigation: true
+    GetHistorySearchResultsNavigation: true
+    GetHomePageSearchNavigationResults: true
+    ContentEnhancementSearch: true
+    ContentEnhancementCount: true
+  SearchSuggestion:
+    GetSearchSuggestions: true
+    GetSearchSuggestionsCount: true
+    CreateSearchSuggestion: true
+    Put: true
+    DeleteSearchSuggestion: true
+  AdminSettings:
+    NavigationSettingEnabled: false
+  ControlPanel:
+    GetControlPanels: true
+    Delete: true
+    DeleteByUrl: true
+    DeleteById: true
+    GetCount: true
+    GetOIDCConfiguration: true
+    GetSettings: true
+    DeleteSetting: true
+    Put: true
+    PutMultiple: true
+    CreateSetting: true
+    GetSettingsCount: true
+  UserPermission:
+    GetUserPermissions: true
+    Put: true
+    GetScreenPermissions: true
+    DeleteUserPermissions: true
+  UserGroups:
+    GetUserGroups: true
+    DeleteUserGroups: true
+    PutUserGroups: true
+    CreateUserGroups: true
+    GetUserGroupsCount: true
+    CreateUserGroupsFirst: true
+  ContentEnhancement:
+    ContentEnhancementSearch: false
+    ContentEnhancementCount: false
+    ContentEnhancementPut: false
+    ContentEnhancementDelete: false
+  AccessRequests:
+    GetAccessRequests: false
+    GetAccessRequestsCount: false
+    CreateAccessRequest: false
+    UpsertAccessRequest: false
+    DeleteAccessRequest: false
+
+UserPermission:
+  IsEnabled: true
+
+spring:
+  application:
+    name: default
+  cloud:
+    config:
+      uri: http://localhost:8888
+      failFast: true
+      PollingInterval: "00:00:10"
