@@ -204,7 +204,7 @@ AdminSettings:
   SearchAdminApiUrl: /adminui
   SearchApiUrl: /
   ApplicationTitle: S365 WUS Dev Reg1 Search Administration
-  DomainDisplay: https://localhost:5011/
+  DomainDisplay: https://localhost:5001/
   DomainS365Delete: https://wus-s365-test-ae-op.azurewebsites.net/main
   DomainNavigation: https://wus-s365-test-ae-op.azurewebsites.net/navigation-search
   DomainSuggestion: https://wus-s365-test-ae-op.azurewebsites.net/search-suggestion
