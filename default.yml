@@ -9,3 +9,5 @@ service1:
   useAdvancedAlgorithm: false
 AdminSettings:
   ApplicationTitle: "ABCD123456789"
+DefaultCounts:
+  SuggestedSearchCount: 50000
